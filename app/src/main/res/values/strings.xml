@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">The Timer 5</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="new_task_toast">新しい予定 ” %1$s（%2$d分）”が作成されました！</string>
+
+    <string name="total_money_plus">現在 %1$d円 得をしています</string>
+    <string name="total_money_minus">現在 %1$d円 損をしています</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

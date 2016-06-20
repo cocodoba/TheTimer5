@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name= "Theme.TheTimer." parent="Base.Theme.TheTimer">
+        <!-- アプリ画面の上にステータスバーをかぶせる -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true </item>
+    </style>
+
+</resources>

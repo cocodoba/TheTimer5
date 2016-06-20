@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--リスト項目1個ごとの大きさと隣の項目との間隔-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="4dp"
+    android:paddingBottom="2dp"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/rounded_list_panel">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@android:color/white">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:background="@android:color/darker_gray">
+
+            <TextView
+                android:id="@+id/taskName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="Title Text"
+                android:textColor="#9acd32"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:background="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="Dur"
+                android:layout_marginLeft="10dp"
+                android:textColor="#9acd32"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:background="@android:color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="tag:"
+                android:layout_marginLeft="5dp"
+                android:textAppearance="?attr/textAppearanceListItem"/>
+
+            <TextView
+                android:id="@+id/tag_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="tag"
+                android:layout_marginLeft="2dp"
+                android:textColor="#9acd32"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:background="@android:color/black"/>
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="A:"
+                            android:textSize="15sp"
+                            android:id="@+id/textView"
+                            android:layout_column="0" />
+
+
+                    <!--<LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/darker_gray">-->
+
+                    <TextView
+                        android:id="@+id/adp_position_on_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="Apos"
+                        android:textColor="#9acd32"
+                        android:textAppearance="?attr/textAppearanceListItem"
+                        android:background="@android:color/black"
+                        android:layout_column="1" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="L:"
+                            android:id="@+id/textView2" />
+
+                        <TextView
+                            android:id="@+id/lst_position_on_list"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Lpos"
+                            android:textColor="#9acd32"
+                            android:textAppearance="?attr/textAppearanceListItem"
+                            android:background="@android:color/black"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="H:"
+                            android:id="@+id/textView3"
+                            android:layout_column="0" />
+
+
+                    <TextView
+                        android:id="@+id/hld_position_on_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="Hpos"
+                        android:textColor="#9acd32"
+                        android:textAppearance="?attr/textAppearanceListItem"
+                        android:background="@android:color/black"/>
+
+                <!--</LinearLayout>-->
+
+                    </TableRow>
+
+                </TableLayout>
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/darker_gray">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="end:"
+                android:id="@+id/end"
+                android:textColor="@android:color/black"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=""
+                android:id="@+id/passed_minutes"
+                android:textColor="#9acd32"
+                android:background="@android:color/black"
+                android:layout_marginRight="10dp"
+                />
+            <!--<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=""
+                android:id="@+id/passed_seconds"
+                android:textColor="#9acd32"
+                android:background="@android:color/black"
+                />-->
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/darker_gray">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="id:"
+                    android:id="@+id/id"
+                    android:textColor="@android:color/black"
+                    android:layout_marginRight="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text=""
+                    android:id="@+id/item_id"
+                    android:textColor="#9acd32"
+                    android:background="@android:color/black"
+                    android:layout_marginRight="10dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

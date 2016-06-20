@@ -1,0 +1,174 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shinoharanaoki.thetimer5.RunningTaskFragment">
+
+    <TextView android:layout_width="match_parent" android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:layout_width="285dp"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        android:background="#ffdf44"
+        android:layout_marginBottom="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/running_task_title"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="48dp"
+                android:background="#fdf68c"
+                android:textSize="30dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp" />
+
+        <RelativeLayout
+            android:id="@+id/m_and_s"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="35sp"
+                android:text="分"
+                android:id="@+id/minutes_char"
+                android:layout_toLeftOf="@+id/space"
+                android:layout_toStartOf="@+id/space"
+                android:layout_alignBottom="@+id/space"
+                android:paddingBottom="5dp" />
+
+            <Space
+                android:layout_width="10px"
+                android:layout_height="40px"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/space"
+                android:layout_marginTop="40dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/abc_text_size_display_2_material"
+                android:text="0"
+                android:id="@+id/minutes_meter"
+                android:layout_alignBottom="@+id/minutes_char"
+                android:layout_toLeftOf="@+id/minutes_char"
+                android:layout_toStartOf="@+id/minutes_char" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/abc_text_size_display_2_material"
+                android:text="0"
+                android:id="@+id/seconds_meter"
+                android:layout_alignBottom="@+id/space"
+                android:layout_toRightOf="@+id/space"
+                android:layout_toEndOf="@+id/space" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="35sp"
+                android:text="秒"
+                android:id="@+id/seconds_char"
+                android:layout_alignBottom="@+id/space"
+                android:layout_toRightOf="@+id/seconds_meter"
+                android:layout_toEndOf="@+id/seconds_meter"
+                android:paddingBottom="5dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=""
+                android:id="@+id/money_conversion"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/abc_text_size_display_2_material"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/m_and_s" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=""
+                android:id="@+id/yen_char"
+                android:layout_alignBottom="@+id/money_conversion"
+                android:layout_toRightOf="@+id/money_conversion"
+                android:layout_toEndOf="@+id/money_conversion" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="終 了"
+                android:id="@+id/close_button"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="45dp"
+                android:textColor="#fbf7ca"
+                android:textStyle="bold"
+                android:textSize="@dimen/abc_text_size_display_2_material"
+                android:singleLine="false"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/hour_meter"
+                android:layout_above="@+id/m_and_s"
+                android:layout_toLeftOf="@+id/hour_char"
+                android:layout_toStartOf="@+id/hour_char"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=""
+                android:id="@+id/hour_char"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@+id/m_and_s"
+                android:paddingBottom="3dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="キャンセル"
+                android:id="@+id/cancel_button"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:textColor="#fbf7ca"
+                android:textSize="18sp"/>
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</FrameLayout>
